@@ -1,6 +1,4 @@
-<%= javascript_include_tag "paging" %>
 $(function () {  
-  // Search form.  
   $('#search').submit(function () {  
     $.get(this.action, $(this).serialize(), null, 'script');  
     return false;  
