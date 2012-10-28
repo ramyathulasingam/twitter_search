@@ -1,0 +1,1 @@
+$(function(){$("#search").submit(function(){return $.get(this.action,$(this).serialize(),null,"script"),!1})});
