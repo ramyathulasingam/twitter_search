@@ -115,7 +115,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  dancroak-twitter-search
+  dancroak-twitter-search (~> 0.5.8)
   jquery-rails
   json
   pg (= 0.12.2)

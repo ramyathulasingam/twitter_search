@@ -7,7 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'twitter'
-gem 'dancroak-twitter-search'
+gem 'dancroak-twitter-search', '~> 0.5.8'
 
 
 gem 'json'
