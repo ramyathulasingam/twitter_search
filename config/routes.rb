@@ -1,6 +1,5 @@
 TwitterSearch::Application.routes.draw do
-  root :to => 'twitter#search'
-  get "welcome/home"
+  root :to => 'welcome#home'
   get "twitter/search"
   post "twitter/search"
   
