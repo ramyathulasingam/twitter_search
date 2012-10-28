@@ -12,7 +12,7 @@ end
 
 gem 'twitter'
 gem 'dancroak-twitter-search', '~> 0.5.8'
-require 'twitter_search'
+
 
 gem 'json'
 
