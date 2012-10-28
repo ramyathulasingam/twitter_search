@@ -1,4 +1,5 @@
 TwitterSearch::Application.routes.draw do
+  root :to => 'twitter#search'
   get "welcome/home"
   get "twitter/search"
   post "twitter/search"
@@ -52,7 +53,7 @@ TwitterSearch::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'twitter#search'
+  #root :to => 'twitter#search'
 
   # See how all your routes lay out with "rake routes"
 
