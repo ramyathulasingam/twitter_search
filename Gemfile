@@ -7,8 +7,8 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'twitter'
+gem 'dancroak-twitter-search'
 require 'twitter_search'
-
 
 gem 'json'
 
