@@ -1,4 +1,5 @@
 class TwitterController < ApplicationController
+require 'twitter_search'
 def search
 	if params[:twitter]
 	@search_term = params[:twitter]
