@@ -1,7 +1,5 @@
-
+<%= javascript_include_tag 'paging.js' %> 
 <h1> Twitter Search </h1>
-
-
 <table align = "center">
 <%= form_tag(:url => {:action => 'search'},:method => 'get', :id => "search") do %>
 	<td> <%= text_field_tag :twitter, @search_term, :size => 50 %> </td>
@@ -12,8 +10,8 @@
 <% end %>
 </table>
 
-
 <br> </br>
+
 <div id="search_list"><%= render 'search' %> </div>
 
  <div id="pageNavPosition"></div>
