@@ -1,7 +1,7 @@
 TwitterSearch::Application.routes.draw do
   root :to => 'welcome#home'
   get "twitter/search"
-  #post "twitter/search"
+  post "twitter/search"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

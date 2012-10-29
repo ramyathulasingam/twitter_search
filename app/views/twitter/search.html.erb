@@ -5,7 +5,7 @@
 
 
 <table align = "center">
-<%= form_tag (:url => {:action => 'search'},:method => 'get', :id => "search") do %>
+<%= form_tag(:url => {:action => 'search'},:method => 'get', :id => "search") do %>
 	<td> <%= text_field_tag :twitter, @search_term, :size => 50 %> </td>
 </tr>
 <tr>
