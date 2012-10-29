@@ -12,22 +12,20 @@
 3. Go to http://localhost:3000/ and you'll see:
        "Welcome aboard: You're riding Ruby on Rails!
 
-
  gem used in the application twitter, dancroak_twitter_search
- <tt>sudo gem install twitter </tt>. 
- <tt> sudo gem install dancroak-twitter-search -s http://gems.github.com /tt>
+      <tt>sudo gem install twitter </tt>. 
+      <tt> sudo gem install dancroak-twitter-search -s http://gems.github.com /tt>
 
 == Application summary 
 
 The Application performs a search for the recent tweets in twitter and display's the search results.
 The Search is performed in the asynchronous fashion.
 
- # Initialize your Twitter client
-client = TwitterSearch::Client.new('twitter_search')
+#Initialize your Twitter client
+    client = TwitterSearch::Client.new('twitter_search')
 
-# query the database 
-@tweets = client.query(:q => "#{params[:twitter]}", :page => 10, :rpp => 25)
-
+#query the database 
+    @tweets = client.query(:q => "#{params[:twitter]}", :page => 10, :rpp => 25)
 
 The code in the application.js is used for asynchronous data transfer.
 $(function () {  
@@ -36,9 +34,6 @@ $(function () {
     return false;  
   });  
 }); 
-
-
-
 
 == Description of Contents
 
