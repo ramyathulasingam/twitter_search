@@ -14,14 +14,6 @@
 
 <div id="search_list"><%= render 'search' %> </div>
 
- <div id="pageNavPosition"></div>
-	<script "/text/javascript">
-		  var pager = new Pager('search_list_page', 19); 
-		    pager.init(); 
-		    pager.showPageNav('pager', 'pageNavPosition'); 
-		    pager.showPage(1);
-	</script>
-
 <%unless @search_term.blank? %>
 	<p align = "center"> <%= link_to "More tweets", :controller => 'twitter', :action => 'search', :twitter => @search_term %></p>
 <%end%>
